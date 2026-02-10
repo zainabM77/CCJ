@@ -5,24 +5,17 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
 
         <title> CCJ </title>
-
-        
         <link rel="stylesheet" href="index.css" />
-
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    
-       
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">    
         <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-        
     </head>
     <body>
         <!--navigation bar section-->
         <nav class="navbar">
             <div class="navbar__container">
-<a href="index.html" id="navbar__logo">Canadian Community Justice</a>
+                <a href="index.html" id="navbar__logo">Canadian Community Justice</a>
                 <div class="navbar__toggle" id="mobile-menu">
                     <span class = "bar"></span>
                     <span class = "bar"></span>
@@ -32,11 +25,6 @@
                     <li class="navbar__item">
                         <a href="index.html" class="navbar__links"> Home</a>
                     </li>
-                  
-                    
-                  <!--   <li class="navbar__item">
-                        <a href="Hiring.html" class="navbar__links"> Hiring</a>
-                    </li> --> 
 
                     <li class="navbar__item">
                         <a href="aboutus.html" class="navbar__links"> About Us </a>
@@ -65,73 +53,62 @@
         </nav>
 
 
-      <section class="contact">
-  <div class="contact__container">
+<section class="intake">
+  <div class="intake__container">
 
-    <h2 class="section__title">Get Help / Contact Us</h2>
+    <h2 class="section__title">Intake Form</h2>
 
-    <p class="contact__intro">
-      If you are looking for information, referrals, or community education programs,
-      please reach out to Canadian Community Justice. All inquiries are handled confidentially.
+    <p class="intake__intro">
+      Please complete this form to help us understand your needs.
+      Submitting this form does not create a legal or professional relationship.
     </p>
 
-    <div class="contact__notice">
-      <strong>Important Notice:</strong>
-      CCJ does not provide legal advice, legal representation, or regulated immigration services.
-      This contact form is not for urgent or emergency legal matters.
-    </div>
+    <form class="intake__form" action="#" method="post">
 
-    <!-- CTA -->
-    <div class="contact__cta">
-      <a href="form.html" class="cta__button">Complete Intake Form</a>
-    </div>
+      <label>Full Name</label>
+      <input type="text" required>
 
-    <!-- General Contact -->
-    <div class="contact__section">
-      <h3>General Contact</h3>
-      <p>Email: <a href="mailto:info@ccj.ca">info@ccj.ca</a></p>
-      <p>Location: Ontario, Canada</p>
-    </div>
+      <label>Email or Phone</label>
+      <input type="text" required>
 
-    <!-- Official Emails -->
-    <div class="contact__section">
-      <h3>Official Email Contacts</h3>
+      <label>City / Province</label>
+      <input type="text">
 
-      <ul class="contact__list">
-        <li><strong>President / Executive Director:</strong> director@ccj.ca</li>
-        <li><strong>Board of Directors:</strong> boardmembers@ccj.ca</li>
-        <li><strong>Officers / Administration:</strong> officers@ccj.ca</li>
-        <li><strong>Accounting / Finance:</strong> accounting@ccj.ca</li>
-        <li><strong>Human Resources:</strong> hr@ccj.ca, careers@ccj.ca</li>
-        <li><strong>Volunteer Coordinator:</strong> volunteers@ccj.ca</li>
-        <li><strong>Donations:</strong> donation@ccj.ca</li>
-      </ul>
-    </div>
+      <label>What are you contacting us about?</label>
+      <select>
+        <option>Legal education / rights information</option>
+        <option>Immigration settlement information & referrals</option>
+        <option>Human rights concern</option>
+        <option>Family or community conflict</option>
+        <option>Events / workshops</option>
+        <option>Other</option>
+      </select>
 
-    <!-- Privacy -->
-    <div class="contact__privacy">
-      <p>
-        <strong>Privacy Notice:</strong> All inquiries are handled confidentially in accordance
-        with our privacy policy. Information is collected only to respond to inquiries and provide
-        community support.
-      </p>
-    </div>
+      <label>Brief Description (optional)</label>
+      <textarea rows="4"></textarea>
+
+      <div class="checkbox">
+        <input type="checkbox" required>
+        <span>I understand CCJ does not provide legal advice or regulated immigration services.</span>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" required>
+        <span>I consent to the collection and use of my information.</span>
+      </div>
+
+      <button type="submit" class="cta__button">Submit Intake Form</button>
+
+    </form>
+
+    <p class="form__privacy">
+      All information submitted is handled confidentially in accordance with CCJ’s privacy policy.
+    </p>
 
   </div>
 </section>
-    
-
-       
 
 
-
-
-
-
-
-
-
-  
      <!-- footer -->
      <div class=" footer__container">
 
@@ -157,9 +134,8 @@
   <p class="footer-text">© 2025 CCJ. All rights reserved.</p> 
 
     
-    
-            <script src="script.js"></script>
-            <body>
-                <html> 
-            
+    <script src="script.js"></script>
+
+</body>
+</html>
     

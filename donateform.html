@@ -5,24 +5,17 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
 
         <title> CCJ </title>
-
-        
         <link rel="stylesheet" href="index.css" />
-
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    
-       
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">    
         <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-        
     </head>
     <body>
         <!--navigation bar section-->
         <nav class="navbar">
             <div class="navbar__container">
-<a href="index.html" id="navbar__logo">Canadian Community Justice</a>
+                <a href="index.html" id="navbar__logo">Canadian Community Justice</a>
                 <div class="navbar__toggle" id="mobile-menu">
                     <span class = "bar"></span>
                     <span class = "bar"></span>
@@ -32,11 +25,6 @@
                     <li class="navbar__item">
                         <a href="index.html" class="navbar__links"> Home</a>
                     </li>
-                  
-                    
-                  <!--   <li class="navbar__item">
-                        <a href="Hiring.html" class="navbar__links"> Hiring</a>
-                    </li> --> 
 
                     <li class="navbar__item">
                         <a href="aboutus.html" class="navbar__links"> About Us </a>
@@ -65,73 +53,109 @@
         </nav>
 
 
-      <section class="contact">
-  <div class="contact__container">
 
-    <h2 class="section__title">Get Help / Contact Us</h2>
+<section class="donation">
+  <div class="donation__container">
 
-    <p class="contact__intro">
-      If you are looking for information, referrals, or community education programs,
-      please reach out to Canadian Community Justice. All inquiries are handled confidentially.
+    <h2 class="section__title">Support Community Justice & Education</h2>
+
+    <p class="donation__intro">
+      Your support helps Canadian Community Justice provide community education,
+      human rights awareness, settlement information, and conflict resolution programs.
     </p>
 
-    <div class="contact__notice">
-      <strong>Important Notice:</strong>
-      CCJ does not provide legal advice, legal representation, or regulated immigration services.
-      This contact form is not for urgent or emergency legal matters.
-    </div>
+    <form class="donation__form">
 
-    <!-- CTA -->
-    <div class="contact__cta">
-      <a href="form.html" class="cta__button">Complete Intake Form</a>
-    </div>
+      <div class="form__group">
+        <label>Full Name (Optional)</label>
+        <input type="text" name="name">
+      </div>
 
-    <!-- General Contact -->
-    <div class="contact__section">
-      <h3>General Contact</h3>
-      <p>Email: <a href="mailto:info@ccj.ca">info@ccj.ca</a></p>
-      <p>Location: Ontario, Canada</p>
-    </div>
+      <div class="form__group">
+        <label>Email (Optional – for confirmation)</label>
+        <input type="email" name="email">
+      </div>
 
-    <!-- Official Emails -->
-    <div class="contact__section">
-      <h3>Official Email Contacts</h3>
+      <div class="form__group">
+        <label>Donation Amount</label>
+        <select name="amount">
+          <option>$25</option>
+          <option>$50</option>
+          <option>$100</option>
+          <option>Other</option>
+        </select>
+      </div>
 
-      <ul class="contact__list">
-        <li><strong>President / Executive Director:</strong> director@ccj.ca</li>
-        <li><strong>Board of Directors:</strong> boardmembers@ccj.ca</li>
-        <li><strong>Officers / Administration:</strong> officers@ccj.ca</li>
-        <li><strong>Accounting / Finance:</strong> accounting@ccj.ca</li>
-        <li><strong>Human Resources:</strong> hr@ccj.ca, careers@ccj.ca</li>
-        <li><strong>Volunteer Coordinator:</strong> volunteers@ccj.ca</li>
-        <li><strong>Donations:</strong> donation@ccj.ca</li>
-      </ul>
-    </div>
+      <div class="form__group">
+        <label>Donation Frequency</label>
+        <select name="frequency">
+          <option>One-time</option>
+          <option>Monthly</option>
+        </select>
+      </div>
 
-    <!-- Privacy -->
-    <div class="contact__privacy">
+      <div class="form__group">
+        <label>Public Recognition</label>
+        <select name="visibility">
+          <option>Public</option>
+          <option>Anonymous</option>
+        </select>
+      </div>
+
+      <div class="form__group">
+        <label>Message (Optional)</label>
+        <textarea rows="4"></textarea>
+      </div>
+
+      <div class="donation__methods">
+        <h4>How to Donate</h4>
+
+        <p>
+          <strong>E-Transfer:</strong><br>
+          Email: donation@ccj.ca<br>
+          Message: “Donation – CCJ”
+        </p>
+
+        <p>
+          <strong>Online Payment:</strong><br>
+          PayPal / Stripe (Coming Soon)
+        </p>
+      </div>
+
+      <div class="form__checkbox">
+        <input type="checkbox" required>
+        <span>
+          I understand CCJ is not a registered charity and charitable tax receipts
+          cannot be issued.
+        </span>
+      </div>
+
+      <div class="form__checkbox">
+        <input type="checkbox" required>
+        <span>
+          I agree to the donor privacy policy.
+        </span>
+      </div>
+
+      <button type="submit" class="cta__button">
+        Submit Donation Intent
+      </button>
+
+    </form>
+
+    <div class="donor__privacy">
+      <h4>Donor Privacy Statement</h4>
       <p>
-        <strong>Privacy Notice:</strong> All inquiries are handled confidentially in accordance
-        with our privacy policy. Information is collected only to respond to inquiries and provide
-        community support.
+        Canadian Community Justice respects donor privacy. Information collected is
+        used solely to process donations and maintain internal records. Donor data
+        is not sold or shared, except where required by law or payment processing.
       </p>
     </div>
 
   </div>
 </section>
-    
-
-       
 
 
-
-
-
-
-
-
-
-  
      <!-- footer -->
      <div class=" footer__container">
 
@@ -157,9 +181,8 @@
   <p class="footer-text">© 2025 CCJ. All rights reserved.</p> 
 
     
-    
-            <script src="script.js"></script>
-            <body>
-                <html> 
-            
+    <script src="script.js"></script>
+
+</body>
+</html>
     
