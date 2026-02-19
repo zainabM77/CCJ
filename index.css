@@ -8,7 +8,7 @@
     font-family:'Kumbh Sans', sans-serif;
 }
     body {
-  background-color:#121212; /* or your main dark color */
+  background-color:#efefef; /* or your main dark color */
   margin: 0;
   overflow-x: hidden;
 }
@@ -16,7 +16,7 @@
 
 
 .navbar{
-    background:#121212;
+    background: #fdfdfd;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
 
 #navbar__logo{
     background-color: black;
-    background-image: linear-gradient(to top, rgb(225, 6, 0) 0%, rgb(239, 19, 19));
+    background-image: linear-gradient(to top, rgb(239, 43, 43) 0%, rgb(147, 20, 20));
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -70,7 +70,7 @@
 }
 
 .navbar__links{
-    color: #E0E0E0;
+    color: #d68383;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +134,7 @@
     }
 
 .navbar__menu.active {
-    background: #121212;
+    background:  #fdfdfd;
     top: 100%;
     opacity: 1;
     transition: all 0.4s ease;
@@ -154,7 +154,7 @@
         height: 2px;
         margin: 7px auto;
         transition: all 0.3s ease-in-out;
-        background: rgba(255, 255, 255, 0.66);
+        background: rgba(193, 61, 61, 0.66);
     }
     .navbar__item{
         width:100%
@@ -236,24 +236,55 @@ body {
 
 /* ---------- HERO ---------- */
 .hero {
-  background: var(--bg-main);
+  position: relative;
+  height: 100vh;
+  background: url("cntower2.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 120px 24px 90px;
+  color: #ffffff;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 24px;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 18px;
-  color: var(--accent);
+  font-size: 3rem;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 
 .hero__tagline {
-  font-size: 1.15rem;
-  max-width: 720px;
-  margin: 0 auto 36px;
-  color: var(--text-muted);
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+  line-height: 1.6;
 }
+
+.hero__btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #b30000;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero__btn:hover {
+  background: #8f0000;
+}
+
 
 /* ---------- HEADINGS ---------- */
 h2 {
