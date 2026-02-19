@@ -11,6 +11,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">    
         <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
+
+
+
+
+
     <body>
         <!--navigation bar section-->
         <nav class="navbar">
@@ -53,95 +58,88 @@
         </nav>
 
 
+<form 
+  action="https://api.web3forms.com/submit" 
+  method="POST" 
+  class="donation__form">
 
-<section class="donation">
-  <div class="donation__container">
+  <!-- Web3Forms Key -->
+  <input type="hidden" name="access_key" value="db938dc9-6d5e-4773-876f-502298451501">
 
-    <h2 class="section__title">Support Community Justice & Education</h2>
+  <div class="form__group">
+    <label>Full Name (Optional)</label>
+    <input type="text" name="name">
+  </div>
 
-    <p class="donation__intro">
-      Your support helps Canadian Community Justice provide community education,
-      human rights awareness, settlement information, and conflict resolution programs.
-    </p>
+  <div class="form__group">
+    <label>Email (Optional – for confirmation)</label>
+    <input type="email" name="email">
+  </div>
 
-    <form class="donation__form">
+  <div class="form__group">
+    <label>Donation Amount</label>
+      <select id="amountSelect" name="amount">
+      <option value="$25">$25</option>
+      <option value="$50">$50</option>
+      <option value="$100">$100</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
 
-      <div class="form__group">
-        <label>Full Name (Optional)</label>
-        <input type="text" name="name">
-      </div>
+ <div class="form__group" id="customAmountGroup" style="display: none;">
+  <label>Enter Custom Amount (CAD)</label>
+  <input 
+    type="number" 
+    id="customAmountInput"
+    name="custom_amount" 
+    placeholder="Enter amount"
+    min="1"
+  >
+</div>
 
-      <div class="form__group">
-        <label>Email (Optional – for confirmation)</label>
-        <input type="email" name="email">
-      </div>
+  <div class="form__group">
+    <label>Donation Frequency</label>
+    <select name="frequency">
+      <option value="One-time">One-time</option>
+      <option value="Monthly">Monthly</option>
+    </select>
+  </div>
 
-      <div class="form__group">
-        <label>Donation Amount</label>
-        <select name="amount">
-          <option>$25</option>
-          <option>$50</option>
-          <option>$100</option>
-          <option>Other</option>
-        </select>
-      </div>
+  <div class="form__group">
+    <label>Public Recognition</label>
+    <select name="visibility">
+      <option value="Public">Public</option>
+      <option value="Anonymous">Anonymous</option>
+    </select>
+  </div>
 
-      <div class="form__group">
-        <label>Donation Frequency</label>
-        <select name="frequency">
-          <option>One-time</option>
-          <option>Monthly</option>
-        </select>
-      </div>
+  <div class="form__group">
+    <label>Message (Optional)</label>
+    <textarea name="message" rows="4"></textarea>
+  </div>
 
-      <div class="form__group">
-        <label>Public Recognition</label>
-        <select name="visibility">
-          <option>Public</option>
-          <option>Anonymous</option>
-        </select>
-      </div>
+  <div class="form__checkbox">
+    <input type="checkbox" name="acknowledge_no_receipt" required>
+    <span>
+      I understand CCJ is not a registered charity and charitable tax receipts cannot be issued.
+    </span>
+  </div>
 
-      <div class="form__group">
-        <label>Message (Optional)</label>
-        <textarea rows="4"></textarea>
-      </div>
+  <div class="form__checkbox">
+    <input type="checkbox" name="privacy_policy" required>
+    <span>
+      I agree to the donor privacy policy.
+    </span>
+  </div>
 
-      <div class="donation__methods">
-        <h4>How to Donate</h4>
+  <button type="submit" class="cta__button">
+    Submit Donation Intent
+  </button>
 
-        <p>
-          <strong>E-Transfer:</strong><br>
-          Email: donation@ccj.ca<br>
-          Message: “Donation – CCJ”
-        </p>
+</form>
 
-        <p>
-          <strong>Online Payment:</strong><br>
-          PayPal / Stripe (Coming Soon)
-        </p>
-      </div>
 
-      <div class="form__checkbox">
-        <input type="checkbox" required>
-        <span>
-          I understand CCJ is not a registered charity and charitable tax receipts
-          cannot be issued.
-        </span>
-      </div>
 
-      <div class="form__checkbox">
-        <input type="checkbox" required>
-        <span>
-          I agree to the donor privacy policy.
-        </span>
-      </div>
-
-      <button type="submit" class="cta__button">
-        Submit Donation Intent
-      </button>
-
-    </form>
 
     <div class="donor__privacy">
       <h4>Donor Privacy Statement</h4>
@@ -181,7 +179,8 @@
   <p class="footer-text">© 2025 CCJ. All rights reserved.</p> 
 
     
-    <script src="script.js"></script>
+    <script src="script.js">
+</script>
 
 </body>
 </html>

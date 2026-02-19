@@ -16,7 +16,7 @@
 
 
 .navbar{
-    background: #fdfdfd;
+    background: #efeae5;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -134,7 +134,7 @@
     }
 
 .navbar__menu.active {
-    background:  #fdfdfd;
+    background:#efeae5;
     top: 100%;
     opacity: 1;
     transition: all 0.4s ease;
@@ -243,7 +243,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ffffff;
+  color: #efeae5;
 }
 
 .hero__overlay {
@@ -379,6 +379,9 @@ h2 {
 .about {
   background: #f7f9fb;
   padding: 80px 20px;
+   min-height: 100vh;   /* 👈 makes it full screen height */
+  display: flex;
+  align-items: center;
 }
 
 .about__container {
@@ -702,6 +705,10 @@ h2 {
 .team {
   padding: 90px 20px;
   background: #ffffff;
+  background: url(".jpg") center/cover no-repeat;
+  min-height: 100vh;   /* 👈 makes it full screen height */
+  display: flex;
+  align-items: center;
 }
 
 .section__container {
@@ -724,11 +731,17 @@ h2 {
 .events {
   padding: 90px 20px;
   background: #f3f3f3;
+   min-height: 100vh;   /* 👈 makes it full screen height */
+  display: flex;
+  align-items: center;
 }
 
 .community {
   padding: 90px 20px;
   background: #ffffff;
+   min-height: 100vh;   /* 👈 makes it full screen height */
+  display: flex;
+  align-items: center;
 }
 
 /* Donation form */ 
@@ -736,6 +749,9 @@ h2 {
 .donation {
   padding: 100px 20px;
   background: #f9f9f9;
+   min-height: 100vh;   /* 👈 makes it full screen height */
+  display: flex;
+  align-items: center;
 }
 
 .donate__container,
@@ -783,8 +799,21 @@ h2 {
   display: inline-block;
 }
 
+.donation__form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
 
 
+.form__group input,
+.form__group select,
+.form__group textarea {
+  padding: 10px;
+  font-size: 0.95rem;
+
+}
 
 
 
@@ -800,7 +829,7 @@ h2 {
 
 
 .footer__container {
-  background: #121212;
+  background:#efeae5;
   min-height: 100px;
   display: flex;
   flex-direction: row;       /* horizontal layout */
@@ -823,17 +852,17 @@ h2 {
 }
 
 .contact-link {
-  color: #fff;
+  color: #545353;
   text-decoration: none;
   font-weight: bold;
 }
 .aboutus-link {
-  color: #fff;
+  color: #545353;
   text-decoration: none;
   font-weight: bold;
 }
 .resource-link {
-  color: #fff;
+  color: #545353;
   text-decoration: none;
   font-weight: bold;
 }
@@ -865,24 +894,24 @@ h2 {
   width: 3.5rem;
   height: 3.5rem;
   background-color: transparent;
-  border: 0.15rem solid rgba(234, 234, 234, 0.1);
+  border: 0.15rem solid rgba(44, 42, 42, 0.1);
   border-radius: 50%;
   margin: 0.6rem;
   transition: 0.3s ease;
-  color: rgb(233, 233, 234);
+  color: rgb(77, 77, 77);
 }
 
 .footer-right a:hover {
   color: black;
   background-color: rgb(237, 236, 239);
   transform: scale(1.2) translateY(-4px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(117, 116, 116, 0.1);
 }
 
 .footer-text {
   font-size: 0.8rem;
   opacity: 0.8;
-  color: white;
+  color: #b30000;
   text-align: center;
 }
 

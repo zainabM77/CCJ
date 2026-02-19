@@ -63,43 +63,54 @@
       Submitting this form does not create a legal or professional relationship.
     </p>
 
-    <form class="intake__form" action="#" method="post">
+    
+<form class="intake__form" 
+      action="https://api.web3forms.com/submit" 
+      method="POST">
 
-      <label>Full Name</label>
-      <input type="text" required>
+  <!-- Web3Forms API key -->
+  <input type="hidden" name="access_key" value="db938dc9-6d5e-4773-876f-502298451501">
 
-      <label>Email or Phone</label>
-      <input type="text" required>
+  <!-- Optional: redirect after submission -->
+  <input type="hidden" name="redirect" value="https://zainabm77.github.io/CCJ//thank-you">
 
-      <label>City / Province</label>
-      <input type="text">
+  <label>Full Name</label>
+  <input type="text" name="name" required>
 
-      <label>What are you contacting us about?</label>
-      <select>
-        <option>Legal education / rights information</option>
-        <option>Immigration settlement information & referrals</option>
-        <option>Human rights concern</option>
-        <option>Family or community conflict</option>
-        <option>Events / workshops</option>
-        <option>Other</option>
-      </select>
+  <label>Email or Phone</label>
+  <input type="text" name="email_or_phone" required>
 
-      <label>Brief Description (optional)</label>
-      <textarea rows="4"></textarea>
+  <label>City / Province</label>
+  <input type="text" name="city_province">
 
-      <div class="checkbox">
-        <input type="checkbox" required>
-        <span>I understand CCJ does not provide legal advice or regulated immigration services.</span>
-      </div>
+  <label>What are you contacting us about?</label>
+  <select name="contact_reason">
+    <option>Legal education / rights information</option>
+    <option>Immigration settlement information & referrals</option>
+    <option>Human rights concern</option>
+    <option>Family or community conflict</option>
+    <option>Events / workshops</option>
+    <option>Other</option>
+  </select>
 
-      <div class="checkbox">
-        <input type="checkbox" required>
-        <span>I consent to the collection and use of my information.</span>
-      </div>
+  <label>Brief Description (optional)</label>
+  <textarea name="description" rows="4"></textarea>
 
-      <button type="submit" class="cta__button">Submit Intake Form</button>
+  <div class="checkbox">
+    <input type="checkbox" name="acknowledge_no_legal_advice" required>
+    <span>I understand CCJ does not provide legal advice or regulated immigration services.</span>
+  </div>
 
-    </form>
+  <div class="checkbox">
+    <input type="checkbox" name="consent_data" required>
+    <span>I consent to the collection and use of my information.</span>
+  </div>
+
+  <button type="submit" class="cta__button">Submit Intake Form</button>
+
+</form>
+
+
 
     <p class="form__privacy">
       All information submitted is handled confidentially in accordance with CCJ’s privacy policy.
