@@ -287,8 +287,10 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    background-position: center top; /* or center 30% */
+    background-position: left center; /* or center 30% */
     height: 80vh; /* optional: slightly shorter */
+  }
+}
   }
 
   .hero h1 {
