@@ -285,6 +285,21 @@ body {
   background: #8f0000;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-position: center top; /* or center 30% */
+    height: 80vh; /* optional: slightly shorter */
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero__tagline {
+    font-size: 1rem;
+  }
+}
+
 
 /* ---------- HEADINGS ---------- */
 h2 {
