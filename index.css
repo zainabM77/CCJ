@@ -207,10 +207,9 @@
 }
 
  .navbar__logo-img {
-    height: 50px;   /* controlled size */
+    height: 42px;   /* controlled size */
     width: auto;
-    object-fit: contain;
-    display: block;
+    flex-shrink: 0; 
 }
 
 
