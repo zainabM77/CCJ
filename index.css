@@ -820,7 +820,20 @@ form button:hover{
   background:#f1bcb5;
 }
 
+@media screen and (max-width: 768px){
 
+  .team{
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .team__button{
+    width: 80%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+}
 
 
 
