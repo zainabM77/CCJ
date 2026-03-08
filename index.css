@@ -17,7 +17,7 @@
 
 .navbar{
     background: #efeae5;
-    height: 80px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -199,9 +199,20 @@
         transform: translateY(-8px) rotate(-45deg);
 
     }
+    @media screen and (max-width:960px){
+    .navbar__logo-img {
+        height: 45px;
+    }
+}
 }
 
-
+ .navbar__logo-img {
+    height: 50px;   /* controlled size */
+    width: auto;
+    max-height: 90%;
+    object-fit: contain;
+    display: block;
+}
 
 
 
