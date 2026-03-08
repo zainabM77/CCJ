@@ -1,28 +1,27 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset = "UTF-8">
         <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
 
         <title> CCJ </title>
-
-        
         <link rel="stylesheet" href="index.css" />
-
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    
-       
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">    
         <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-        
     </head>
+
+
+
+
+
     <body>
         <!--navigation bar section-->
         <nav class="navbar">
             <div class="navbar__container">
- <a href="index.html" id="navbar__logo">
+               <a href="index.html" id="navbar__logo">
                   <img src="logo.png" alt="CCJ Logo" class="navbar__logo-img">
 CCJ </a>
                 <div class="navbar__toggle" id="mobile-menu">
@@ -34,11 +33,6 @@ CCJ </a>
                     <li class="navbar__item">
                         <a href="index.html" class="navbar__links"> Home</a>
                     </li>
-                  
-                    
-                  <!--   <li class="navbar__item">
-                        <a href="Hiring.html" class="navbar__links"> Hiring</a>
-                    </li> --> 
 
                     <li class="navbar__item">
                         <a href="aboutus.html" class="navbar__links"> About Us </a>
@@ -67,42 +61,79 @@ CCJ </a>
         </nav>
 
 
-      <section class="team">
-  <div class="section__container">
 
-    <h2 class="section__title">Our Team</h2>
+<body>
 
-    <p class="section__text">
-      Our team includes experienced human rights advocates, legal professionals,
-      social workers, immigration consultants, and certified family mediators who
-      are committed to ethical, community-centered service.
-    </p>
+<section class="join-form">
 
- <div class="team__cta">
-      <a href="joinform.html" class="team__button">Join Our Team</a>
-    </div>
+<div class="form-container">
 
-  </div>
+<h2>Join the CCJ Team</h2>
+
+<p>
+Thank you for your interest in joining Canadian Community Justice.
+Please complete the form below to apply as a volunteer or committee member.
+</p>
+
+<form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+
+<!-- Web3Forms Access Key -->
+<input type="hidden" name="access_key" value="db938dc9-6d5e-4773-876f-502298451501">
+
+<!-- Name -->
+<label>Full Name *</label>
+<input type="text" name="name" required>
+
+<!-- Email -->
+<label>Email *</label>
+<input type="email" name="email" required>
+
+<!-- Phone -->
+<label>Phone</label>
+<input type="text" name="phone">
+
+<!-- Position -->
+<label>How would you like to join? *</label>
+
+<select name="position" required>
+<option value="">Select an option</option>
+<option value="Volunteer">Volunteer</option>
+<option value="Committee Member">CCJ Committee Member</option>
+</select>
+
+<!-- City -->
+<label>City / Province</label>
+<input type="text" name="location">
+
+<!-- Message -->
+<label>Tell us about your interest</label>
+<textarea name="message" rows="5"></textarea>
+
+<!-- Resume -->
+<label>Resume (Required) *</label>
+<input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+
+<!-- Cover Letter -->
+<label>Cover Letter (Optional)</label>
+<input type="file" name="cover_letter" accept=".pdf,.doc,.docx">
+
+<!-- Supporting Docs -->
+<label>Additional Supporting Documents (Optional)</label>
+<input type="file" name="supporting_docs" accept=".pdf,.doc,.docx">
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</div>
+
 </section>
 
-
-       
-
-
-
-
-
-
-
-
-
-  
-     <!-- footer -->
-     <div class=" footer__container">
+  <div class=" footer__container">
 
  <div class="footer-left">
     <a href="contact.html" class="contact-link">Contact Us</a>
-    <a href="aboutus.html" class="aboutus-link">About Us</a>
+    <a href="AboutUs.html" class="aboutus-link">About Us</a>
     <a href="service.html" class="resource-link">Services</a>
 
   </div>
@@ -122,9 +153,9 @@ CCJ </a>
   <p class="footer-text">© 2025 CCJ. All rights reserved.</p> 
 
     
-    
-            <script src="script.js"></script>
-            <body>
-                <html> 
-            
+    <script src="script.js">
+</script>
+
+</body>
+</html>
     
