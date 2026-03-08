@@ -733,32 +733,40 @@ h2 {
 
 
 /* TEAM STYLING */
+/* Join Team Section */
+
 .team {
-  padding: 90px 20px;
-  background: #ffffff;
-  background: url(".jpg") center/cover no-repeat;
-  min-height: 100vh;   /* 👈 makes it full screen height */
+  padding: 100px 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
-.team__cta{
-  margin-top: 30px;
+
+.team__container{
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
   text-align: center;
 }
 
-.team__button{
-  display: inline-block;
-  padding: 14px 28px;
-  background-color: #b30000;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: 0.3s;
+.team__text{
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
 }
 
-.team__button:hover{
-  background-color: #e6acac;
+.team__cta{
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Reuse the same button style */
+.team__cta .cta__button{
+  display: inline-block;
 }
 
 .join-form{
