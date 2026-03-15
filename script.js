@@ -8,6 +8,7 @@ menu.addEventListener('click', function (){
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  // Donation custom amount
   const amountSelect = document.getElementById("amountSelect");
   const customAmountGroup = document.getElementById("customAmountGroup");
 
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // COMMUNITY MEMBER FEE DISPLAY
+  // Membership fee notice
   const positionSelect = document.getElementById("positionSelect");
   const feeNotice = document.getElementById("membershipFeeNotice");
 
@@ -32,6 +33,17 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         feeNotice.style.display = "none";
       }
+    });
+  }
+
+  // Copy email button
+  const copyBtn = document.getElementById("copyEmailBtn");
+
+  if(copyBtn){
+    copyBtn.addEventListener("click", function(){
+      navigator.clipboard.writeText("donation.ccj@gmail.com");
+      copyBtn.innerText = "Copied!";
+      setTimeout(()=>{copyBtn.innerText="Copy";},2000);
     });
   }
 
