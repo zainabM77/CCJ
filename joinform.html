@@ -91,15 +91,41 @@ Please complete the form below to apply as a volunteer or committee member.
 <!-- Phone -->
 <label>Phone</label>
 <input type="text" name="phone">
+<label>LinkedIn Profile (Optional)</label>
+<input type="url" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
 
 <!-- Position -->
 <label>How would you like to join? *</label>
 
-<select name="position" required>
+<select name="position" id="positionSelect" required>
 <option value="">Select an option</option>
 <option value="Volunteer">Volunteer</option>
-<option value="Committee Member">CCJ Community Member</option>
+<option value="Community Member">CCJ Community Member</option>
 </select>
+
+<div id="membershipFeeNotice" style="display:none; margin-top:15px;" class="membership-box">
+
+<p><strong>Community Member Membership Fee:</strong> $50 annually.</p>
+
+<p>
+To complete your application, please send the membership fee via
+<strong>e-Transfer</strong> to:
+</p>
+
+<p style="font-weight:bold; color:#0a4a8a;">
+donation.ccj@gmail.com
+</p>
+
+<p>
+Please include your <strong>full name</strong> in the e-transfer message so we can match your payment with your application.
+</p>
+
+<label style="margin-top:10px;">
+<input type="checkbox" name="payment_confirmation">
+I understand that a $50 membership fee must be sent via e-Transfer.
+</label>
+
+</div>
 
 <!-- City -->
 <label>City / Province</label>
@@ -116,6 +142,10 @@ Please complete the form below to apply as a volunteer or committee member.
 <!-- Cover Letter -->
 <label>Cover Letter (Optional)</label>
 <input type="file" name="cover_letter" accept=".pdf,.doc,.docx">
+
+<!-- Driver License -->
+<label>Driver’s License (Required) *</label>
+<input type="file" name="drivers_license" accept=".jpg,.jpeg,.png,.pdf" required>
 
 <!-- Supporting Docs -->
 <label>Additional Supporting Documents (Optional)</label>

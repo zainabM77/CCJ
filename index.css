@@ -951,7 +951,13 @@ form button:hover{
 
 }
 
-
+.membership-box{
+background:#f4f7fb;
+border-left:4px solid #0a4a8a;
+padding:15px;
+border-radius:6px;
+font-size:15px;
+}
 
 
 
