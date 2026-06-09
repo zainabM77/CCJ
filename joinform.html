@@ -1,183 +1,115 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
-
-        <title> CCJ </title>
-        <link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">    
-        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    </head>
-
-
-
-
-
-    <body>
-        <!--navigation bar section-->
-        <nav class="navbar">
-            <div class="navbar__container">
-               <a href="index.html" id="navbar__logo">
-                  <img src="logo.png" alt="CCJ Logo" class="navbar__logo-img">
-CCJ </a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class = "bar"></span>
-                    <span class = "bar"></span>
-                    <span class = "bar"></span>
-                </div>
-                <ul class= "navbar__menu">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__links"> Home</a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a href="aboutus.html" class="navbar__links"> About Us </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="vision.html" class="navbar__links"> Our Vision </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="service.html" class="navbar__links"> Services </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="team.html" class="navbar__links"> Our Team </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="event.html" class="navbar__links"> Events & Workshops </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="contact.html" class="navbar__links"> Contact Us</a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="donate.html" class="navbar__links"> Donate/Support</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Our Team — CCJ</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Kumbh+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
 
+<nav class="navbar" role="navigation">
+  <div class="navbar__container">
+    <a href="index.html" id="navbar__logo">
+      <img src="logo.png" alt="CCJ Logo" class="navbar__logo-img"> CCJ
+    </a>
+    <button class="navbar__toggle" id="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a href="index.html"   class="navbar__links">Home</a></li>
+      <li class="navbar__item"><a href="aboutus.html" class="navbar__links">About Us</a></li>
+      <li class="navbar__item"><a href="vision.html"  class="navbar__links">Our Vision</a></li>
+      <li class="navbar__item"><a href="service.html" class="navbar__links">Services</a></li>
+      <li class="navbar__item"><a href="team.html"    class="navbar__links">Our Team</a></li>
+      <li class="navbar__item"><a href="event.html"   class="navbar__links">Events &amp; Workshops</a></li>
+      <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact Us</a></li>
+      <li class="navbar__item"><a href="donate.html"  class="navbar__links">Donate / Support</a></li>
+    </ul>
+  </div>
+</nav>
+
 <section class="join-form">
+  <div class="form-container">
 
-<div class="form-container">
+    <span class="accent-line"></span>
+    <h2>Join the CCJ Team</h2>
+    <p>Thank you for your interest in Canadian Community Justice. Please complete the form below to apply as a volunteer or community member.</p>
 
-<h2>Join the CCJ Team</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
 
-<p>
-Thank you for your interest in joining Canadian Community Justice.
-Please complete the form below to apply as a volunteer or committee member.
-</p>
+      <input type="hidden" name="access_key" value="db938dc9-6d5e-4773-876f-502298451501">
 
-<form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+      <label for="jf-name">Full Name *</label>
+      <input id="jf-name" type="text" name="name" required placeholder="Your full name">
 
-<!-- Web3Forms Access Key -->
-<input type="hidden" name="access_key" value="db938dc9-6d5e-4773-876f-502298451501">
+      <label for="jf-email">Email *</label>
+      <input id="jf-email" type="email" name="email" required placeholder="your@email.com">
 
-<!-- Name -->
-<label>Full Name *</label>
-<input type="text" name="name" required>
+      <label for="jf-phone">Phone</label>
+      <input id="jf-phone" type="tel" name="phone" placeholder="Optional">
 
-<!-- Email -->
-<label>Email *</label>
-<input type="email" name="email" required>
+      <label for="jf-linkedin">LinkedIn Profile (Optional)</label>
+      <input id="jf-linkedin" type="url" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
 
-<!-- Phone -->
-<label>Phone</label>
-<input type="text" name="phone">
-<label>LinkedIn Profile (Optional)</label>
-<input type="url" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+      <label for="positionSelect">How would you like to join? *</label>
+      <select id="positionSelect" name="position" required>
+        <option value="">Select an option</option>
+        <option value="Volunteer">Volunteer</option>
+        <option value="Community Member">CCJ Community Member</option>
+      </select>
 
-<!-- Position -->
-<label>How would you like to join? *</label>
+      <div id="membershipFeeNotice" style="display:none;" class="membership-box">
+        <p><strong>Community Member Membership Fee:</strong> $50 annually.</p>
+        <p>Please send the membership fee via e-Transfer to:</p>
+        <p style="margin-top:8px;">
+          <strong>donation.ccj@gmail.com</strong>
+          <br>
+          <button type="button" id="copyEmailBtn" class="copy-large">Copy Email</button>
+        </p>
+        <p style="margin-top:10px;">Include your <strong>full name</strong> in the e-Transfer message so we can match your application.</p>
+      </div>
 
-<select name="position" id="positionSelect" required>
-<option value="">Select an option</option>
-<option value="Volunteer">Volunteer</option>
-<option value="Community Member">CCJ Community Member</option>
-</select>
+      <label for="jf-location">City / Province</label>
+      <input id="jf-location" type="text" name="location" placeholder="e.g. Toronto, Ontario">
 
-<div id="membershipFeeNotice" style="display:none; margin-top:15px;" class="membership-box">
+      <label for="jf-message">Tell us about your interest</label>
+      <textarea id="jf-message" name="message" rows="5" placeholder="Why do you want to get involved with CCJ?"></textarea>
 
-<p><strong>Community Member Membership Fee:</strong> $50 annually.</p>
+      <label>Résumé (Required) *</label>
+      <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
 
-<p>Please send the membership fee via e-Transfer to:</p>
+      <label>Cover Letter (Optional)</label>
+      <input type="file" name="cover_letter" accept=".pdf,.doc,.docx">
 
-<p class="payment-email">
-donation.ccj@gmail.com
-<button type="button" id="copyEmailBtn">Copy Email</button>
-</p>
+      <label>Driver's Licence (Required) *</label>
+      <input type="file" name="drivers_license" accept=".jpg,.jpeg,.png,.pdf" required>
 
-<p>
-Include your <strong>full name</strong> in the e-Transfer message so we can match your application.
-</p>
+      <label>Additional Supporting Documents (Optional)</label>
+      <input type="file" name="supporting_docs" accept=".pdf,.doc,.docx">
 
-</div>
-<!-- City -->
-<label>City / Province</label>
-<input type="text" name="location">
+      <button type="submit">Submit Application</button>
 
-<!-- Message -->
-<label>Tell us about your interest</label>
-<textarea name="message" rows="5"></textarea>
-
-<!-- Resume -->
-<label>Resume (Required) *</label>
-<input type="file" name="resume" accept=".pdf,.doc,.docx" required>
-
-<!-- Cover Letter -->
-<label>Cover Letter (Optional)</label>
-<input type="file" name="cover_letter" accept=".pdf,.doc,.docx">
-
-<!-- Driver License -->
-<label>Driver’s License (Required) *</label>
-<input type="file" name="drivers_license" accept=".jpg,.jpeg,.png,.pdf" required>
-
-<!-- Supporting Docs -->
-<label>Additional Supporting Documents (Optional)</label>
-<input type="file" name="supporting_docs" accept=".pdf,.doc,.docx">
-
-<button type="submit">Submit Application</button>
-
-</form>
-
-</div>
-
+    </form>
+  </div>
 </section>
 
-  <div class=" footer__container">
-
- <div class="footer-left">
-    <a href="contact.html" class="contact-link">Contact Us</a>
-    <a href="aboutus.html" class="aboutus-link">About Us</a>
-    <a href="service.html" class="resource-link">Services</a>
-
+<div class="footer__container">
+  <div class="footer-left">
+    <a href="contact.html">Contact Us</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="service.html">Services</a>
   </div>
+  <div class="footer-right">
+    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://youtube.com"  target="_blank" rel="noopener" class="social-icon"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+<p class="footer-text">© 2025 Canadian Community Justice. All rights reserved.</p>
 
-    <div class="footer-right">
-    <a href="https://facebook.com" target="_blank" class="social-icon">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-  <a href="https://linkedin.com" target="_blank" class="social-icon">
-  <i class="fab fa-linkedin-in"></i>
-</a>
-    <a href="https://youtube.com" target="_blank" class="social-icon">
-      <i class="fab fa-youtube"></i>
-    </a>
-    </div>
- </div>
-  <p class="footer-text">© 2025 CCJ. All rights reserved.</p> 
-
-    
-    <script src="script.js">
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
-    

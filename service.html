@@ -1,236 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content = "width=device-width, initial-scale=1.0"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — CCJ</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Kumbh+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        <title> CCJ </title>
+<nav class="navbar" role="navigation">
+  <div class="navbar__container">
+    <a href="index.html" id="navbar__logo">
+      <img src="logo.png" alt="CCJ Logo" class="navbar__logo-img"> CCJ
+    </a>
+    <button class="navbar__toggle" id="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a href="index.html"   class="navbar__links">Home</a></li>
+      <li class="navbar__item"><a href="aboutus.html" class="navbar__links">About Us</a></li>
+      <li class="navbar__item"><a href="vision.html"  class="navbar__links">Our Vision</a></li>
+      <li class="navbar__item"><a href="service.html" class="navbar__links">Services</a></li>
+      <li class="navbar__item"><a href="team.html"    class="navbar__links">Our Team</a></li>
+      <li class="navbar__item"><a href="event.html"   class="navbar__links">Events &amp; Workshops</a></li>
+      <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact Us</a></li>
+      <li class="navbar__item"><a href="donate.html"  class="navbar__links">Donate / Support</a></li>
+    </ul>
+  </div>
+</nav>
 
-        
-        <link rel="stylesheet" href="index.css" />
-
-        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-    
-       
-        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">    
-        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-        
-    </head>
-    <body>
-        <!--navigation bar section-->
-        <nav class="navbar">
-            <div class="navbar__container">
- <a href="index.html" id="navbar__logo">
-                  <img src="logo.png" alt="CCJ Logo" class="navbar__logo-img">
-CCJ </a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class = "bar"></span>
-                    <span class = "bar"></span>
-                    <span class = "bar"></span>
-                </div>
-                <ul class= "navbar__menu">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__links"> Home</a>
-                    </li>
-                  
-                    
-                  <!--   <li class="navbar__item">
-                        <a href="Hiring.html" class="navbar__links"> Hiring</a>
-                    </li> --> 
-
-                    <li class="navbar__item">
-                        <a href="aboutus.html" class="navbar__links"> About Us </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="vision.html" class="navbar__links"> Our Vision </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="service.html" class="navbar__links"> Services </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="team.html" class="navbar__links"> Our Team </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="event.html" class="navbar__links"> Events & Workshops </a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="contact.html" class="navbar__links"> Contact Us</a>
-                    </li>
-                     <li class="navbar__item">
-                        <a href="donate.html" class="navbar__links"> Donate/Support</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-
-
-        
-        <section class="services">
+<section class="services">
   <div class="services__container">
 
-    <h2 class="section__title">Services & Programs</h2>
+    <span class="accent-line"></span>
+    <h2 class="section__title">Services &amp; Programs</h2>
 
     <p class="services__disclaimer">
-      Canadian Community Justice does not provide legal advice, legal representation, or regulated
-      immigration services. All information is provided for educational and referral purposes only.
+      Canadian Community Justice does not provide legal advice, legal representation, or regulated immigration services. All information is provided for educational and referral purposes only.
     </p>
 
-    <!-- SERVICES -->
     <div class="services__grid">
 
       <div class="service__card">
-        <h3>Legal Education & Rights Awareness</h3>
+        <h3>Legal Education &amp; Rights Awareness</h3>
         <ul>
           <li>Know-Your-Rights workshops</li>
           <li>Public legal education sessions</li>
           <li>Family law process education (information only)</li>
           <li>Referrals to legal aid, lawyers, and community legal clinics</li>
         </ul>
-        <p>
-          We provide public education sessions to help individuals understand their legal rights,
-          responsibilities, and available resources.
-        </p>
+        <p>We provide public education sessions to help individuals understand their legal rights, responsibilities, and available resources.</p>
       </div>
 
       <div class="service__card">
-        <h3>Immigration Settlement Support (Information & Referral)</h3>
+        <h3>Immigration Settlement Support</h3>
         <ul>
           <li>Orientation for newcomers</li>
           <li>Settlement information</li>
           <li>Referrals to licensed immigration professionals</li>
           <li>Help understanding forms (without advice)</li>
         </ul>
-        <p>
-          We support newcomers by providing settlement information and referrals to authorized
-          immigration professionals and community resources.
-        </p>
+        <p>We support newcomers by providing settlement information and referrals to authorised immigration professionals and community resources.</p>
       </div>
 
       <div class="service__card">
-        <h3>Human Rights Education & Advocacy</h3>
+        <h3>Human Rights Education &amp; Advocacy</h3>
         <ul>
           <li>Anti-discrimination awareness</li>
           <li>Human rights workshops</li>
           <li>Community advocacy initiatives</li>
           <li>Policy education</li>
         </ul>
-        <p>
-          We promote human rights awareness through education, advocacy, and meaningful community
-          engagement.
-        </p>
+        <p>We promote human rights awareness through education, advocacy, and meaningful community engagement.</p>
       </div>
 
       <div class="service__card">
-        <h3>Family Conflict Support & Mediation</h3>
+        <h3>Family Conflict Support &amp; Mediation</h3>
         <ul>
           <li>Conflict resolution education</li>
           <li>Mediation services (with certified mediators only)</li>
           <li>Family communication workshops</li>
           <li>Referrals to counselling and legal professionals</li>
         </ul>
-        <p>
-          We support families experiencing conflict by offering education, mediation services,
-          and referrals to appropriate professionals.
-        </p>
+        <p>We support families experiencing conflict by offering education, mediation services, and referrals to appropriate professionals.</p>
       </div>
 
       <div class="service__card">
-        <h3>Community Support & Capacity Building</h3>
+        <h3>Community Support &amp; Capacity Building</h3>
         <ul>
           <li>Community workshops</li>
           <li>Volunteer programs</li>
           <li>Peer support initiatives</li>
           <li>Partnerships with service providers</li>
         </ul>
-        <p>
-          We strengthen communities by building capacity through education, collaboration, and
-          leadership development.
-        </p>
+        <p>We strengthen communities by building capacity through education, collaboration, and leadership development.</p>
       </div>
 
       <div class="service__card">
-  <h3>Mentorship & Career Guidance</h3>
-  <ul>
-    <li>Mentor–mentee matching program</li>
-    <li>Career mentorship for students and newcomers</li>
-    <li>University and college preparation resources</li>
-    <li>Professional development guidance</li>
-    <li>Networking opportunities with community leaders</li>
-  </ul>
-  <p>
-    Our mentorship initiatives connect experienced professionals with students,
-    newcomers, and community members seeking guidance in all sectors. 
-  </p>
-</div>
+        <h3>Mentorship &amp; Career Guidance</h3>
+        <ul>
+          <li>Mentor–mentee matching program</li>
+          <li>Career mentorship for students and newcomers</li>
+          <li>University and college preparation resources</li>
+          <li>Professional development guidance</li>
+          <li>Networking opportunities with community leaders</li>
+        </ul>
+        <p>Our mentorship initiatives connect experienced professionals with students, newcomers, and community members seeking guidance in all sectors.</p>
+      </div>
 
     </div>
 
-    <!-- PROGRAMS -->
     <h2 class="section__subtitle">Our Programs</h2>
-
     <div class="programs__list">
       <div class="program__item">Access to Justice Education Program</div>
-      <div class="program__item">Newcomer Settlement & Integration Program</div>
+      <div class="program__item">Newcomer Settlement &amp; Integration Program</div>
       <div class="program__item">Human Rights Awareness Initiative</div>
-      <div class="program__item">Family Mediation & Conflict Resolution Program</div>
-      <div class="program__item">Community Education & Leadership Program</div>
-      <div class="program__item">Mentorship & Career Development Program</div>
+      <div class="program__item">Family Mediation &amp; Conflict Resolution Program</div>
+      <div class="program__item">Community Education &amp; Leadership Program</div>
+      <div class="program__item">Mentorship &amp; Career Development Program</div>
     </div>
 
     <div class="services__note">
-      Canadian Community Justice is a non-profit organization based in Ontario, Canada.
-      We do not provide legal advice or regulated immigration services.
+      Canadian Community Justice is a non-profit organisation based in Ontario, Canada. We do not provide legal advice or regulated immigration services.
     </div>
 
   </div>
 </section>
 
-      
-
-       
-
-
-
-
-
-
-
-
-
-  
-     <!-- footer -->
-     <div class=" footer__container">
-
- <div class="footer-left">
-    <a href="contact.html" class="contact-link">Contact Us</a>
-    <a href="AboutUs.html" class="aboutus-link">About Us</a>
-    <a href="service.html" class="resource-link">Services</a>
-
+<div class="footer__container">
+  <div class="footer-left">
+    <a href="contact.html">Contact Us</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="service.html">Services</a>
   </div>
+  <div class="footer-right">
+    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://youtube.com"  target="_blank" rel="noopener" class="social-icon"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+<p class="footer-text">© 2025 Canadian Community Justice. All rights reserved.</p>
 
-    <div class="footer-right">
-    <a href="https://facebook.com" target="_blank" class="social-icon">
-      <i class="fab fa-facebook-f"></i>
-    </a>
- <a href="https://linkedin.com" target="_blank" class="social-icon">
-  <i class="fab fa-linkedin-in"></i>
-</a>
-    <a href="https://youtube.com" target="_blank" class="social-icon">
-      <i class="fab fa-youtube"></i>
-    </a>
-    </div>
- </div>
-  <p class="footer-text">© 2025 CCJ. All rights reserved.</p> 
-
-    
-    
-            <script src="script.js"></script>
-        </body>
-        </html>
-    
-            
-    
+<script src="script.js"></script>
+</body>
+</html>
